@@ -1,0 +1,8 @@
+A simple Ruby app that downloads all tweets of a given screen name to a text file in the directory where it is executed.
+
+Some things I plan on adding at some point:
+
+- incremental updates to a file instead of loading everything from scratch each time
+- finding URLs in each tweet and following them to their "exploded" form and storing those instead of shortened ones
+- finding image links in each tweet and downloading them to a local folder
+

@@ -9,7 +9,8 @@ end
 screenName = ARGV[0]
 filename = screenName + ".txt"
 
-
+# This method will load all Tweets (up the 3200 max imposed by Twiter) in pages of 200 at a time
+# and write them out to the text file passed in as the 'aFile' argument.
 def readTweetStreamIntoFile(screenName, aFile)
   page=0
   timeline = nil
@@ -57,6 +58,7 @@ def readTweetStreamIntoFile(screenName, aFile)
   puts "Finished loading timeline for: " + screenName
 end
 
+# this will execute inline when this script is run and will open the file and call the 'readTweetStreamIntoFile' defined above
 aFile = File.open(filename, "w+") do |aFile|
   puts "Reading tweet stream into file '" + filename + "' for screen_name: " + screenName
   readTweetStreamIntoFile(screenName, aFile)
