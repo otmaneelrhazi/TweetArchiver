@@ -9,7 +9,7 @@ end
 screenName = ARGV[0]
 filename = screenName + ".txt"
 
-# This method will load all Tweets (up the 3200 max imposed by Twiter) in pages of 200 at a time
+# This method will load all Tweets (up the 3200 max imposed by Twitter) in pages of 200 at a time
 # and write them out to the text file passed in as the 'aFile' argument.
 def readTweetStreamIntoFile(screenName, aFile)
   page=0
